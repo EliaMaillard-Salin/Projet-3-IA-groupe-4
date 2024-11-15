@@ -23,6 +23,7 @@ class GameManager
 
 	sf::RenderWindow* mpWindow;
 	sf::Font mFont;
+	sf::Color mClearColor;
 
 	Scene* mpScene;
 
@@ -48,7 +49,7 @@ public:
 	~GameManager();
 	static GameManager* Get();
 
-	void CreateWindow(unsigned int width, unsigned int height, const char* title, int fpsLimit = 60);
+	void CreateWindow(unsigned int width, unsigned int height, const char* title, int fpsLimit = 60, const sf::Color& color = sf::Color::Red);
 
 	template<typename T>
 	void LaunchScene();

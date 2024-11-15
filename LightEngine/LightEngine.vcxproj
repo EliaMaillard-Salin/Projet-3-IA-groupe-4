@@ -30,6 +30,7 @@
     <ClCompile Include="PlantAction.cpp" />
     <ClCompile Include="Projectile.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Stage.cpp" />
     <ClCompile Include="StateMachine.cpp" />
     <ClCompile Include="Transition.cpp" />
     <ClCompile Include="Zombie.cpp" />
@@ -48,6 +49,7 @@
     <ClInclude Include="PlantAction.h" />
     <ClInclude Include="Projectile.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="Stage.h" />
     <ClInclude Include="StateMachine.h" />
     <ClInclude Include="Transition.h" />
     <ClInclude Include="Zombie.h" />

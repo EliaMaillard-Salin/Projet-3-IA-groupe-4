@@ -61,6 +61,9 @@
     <ClCompile Include="Behaviour.inl">
       <Filter>Engine\StateMachine</Filter>
     </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Entity.h">
@@ -110,6 +113,9 @@
     </ClInclude>
     <ClInclude Include="Scene.h">
       <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

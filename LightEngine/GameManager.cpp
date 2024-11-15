@@ -35,7 +35,7 @@ GameManager::~GameManager()
 	}
 }
 
-void GameManager::CreateWindow(unsigned int width, unsigned int height, const char* title, int fpsLimit)
+void GameManager::CreateWindow(unsigned int width, unsigned int height, const char* title, int fpsLimit, const sf::Color& color)
 {
 	_ASSERT(mpWindow == nullptr);
 
@@ -44,7 +44,10 @@ void GameManager::CreateWindow(unsigned int width, unsigned int height, const ch
 
 	mWindowWidth = width;
 	mWindowHeight = height;
+
+	mClearColor = color;
 }
+
 
 void GameManager::Run()
 {
@@ -144,6 +147,7 @@ void GameManager::Update()
 void GameManager::Draw()
 {
 	mpWindow->clear();
+	mpWindow->clear(mClearColor);
 	
 	for (Entity* entity : mEntities)
 	{

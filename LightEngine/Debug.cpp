@@ -4,6 +4,8 @@
 
 #include <SFML/Graphics/RenderWindow.hpp>
 
+
+
 #include <string>
 
 Debug* Debug::Get()
@@ -15,6 +17,14 @@ Debug* Debug::Get()
 
 void Debug::Draw(sf::RenderWindow* pRenderWindow)
 {
+
+	for (sf::RectangleShape& rectangle : mRectangle)
+	{
+		pRenderWindow->draw(rectangle);
+	}
+
+	mRectangle.clear();
+
 	for (Line& line : mLines)
 	{
 		pRenderWindow->draw(&line.start, 2, sf::Lines);
@@ -35,6 +45,9 @@ void Debug::Draw(sf::RenderWindow* pRenderWindow)
 	}
 
 	mCircles.clear();
+
+
+	
 }
 
 void Debug::DrawLine(float x1, float y1, float x2, float y2, const sf::Color& color)
@@ -91,4 +104,11 @@ void Debug::DrawText(float x, float y, const std::string& text, float ratioX, fl
 	sfText.setOrigin(bounds.width * ratioX, bounds.height * ratioY);
 
 	Debug::Get()->mTexts.push_back(sfText);
+}
+
+void Debug::DrawBackground(const sf::Color& color) {
+	sf::RectangleShape rectangle(sf::Vector2f(sf::VideoMode::getDesktopMode().width/100*61, sf::VideoMode::getDesktopMode().height));
+	rectangle.setPosition(1280/100*5,0);
+	rectangle.setFillColor(color);
+	Debug::Get()->mRectangle.push_back(rectangle);
 }

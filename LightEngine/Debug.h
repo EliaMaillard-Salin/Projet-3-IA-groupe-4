@@ -6,6 +6,7 @@
 #include <SFML/Graphics/Vertex.hpp>
 #include <SFML/Graphics/Text.hpp>
 #include <SFML/Graphics/CircleShape.hpp>
+#include <SFML/Graphics/RectangleShape.hpp>
 
 class GameManager;
 
@@ -26,6 +27,7 @@ class Debug
 	std::vector<Line> mLines;
 	std::vector<sf::Text> mTexts;
 	std::vector<sf::CircleShape> mCircles;
+	std::vector<sf::RectangleShape>mRectangle;
 
 	void Draw(sf::RenderWindow* pRenderWindow);
 
@@ -37,6 +39,7 @@ public:
 	static void DrawCircle(float x, float y, float radius, const sf::Color& color);
 	static void DrawText(float x, float y, const std::string& text, const sf::Color& color);
 	static void DrawText(float x, float y, const std::string& text, float ratioX, float ratioY, const sf::Color& color);
+	static void DrawBackground(const sf::Color& color);
 
 	friend GameManager;
 };
