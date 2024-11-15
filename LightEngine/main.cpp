@@ -3,6 +3,7 @@
 #include <iostream>
 
 #include "GameManager.h"
+#include "RugbyScene.h"
 #include "GameScene.h"
 
 #include <cstdlib>
@@ -14,7 +15,7 @@ int main()
 
 	pInstance->CreateWindow(1280, 720, "PVZ");
 	
-	pInstance->LaunchScene<GameScene>();
+	pInstance->LaunchScene<RugbyScene>();
 
 	return 0;
 }

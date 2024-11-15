@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Ball.cpp" />
     <ClCompile Include="Behaviour.cpp" />
     <ClCompile Include="Behaviour.inl" />
     <ClCompile Include="Debug.cpp" />
@@ -28,7 +29,11 @@
     <ClCompile Include="PlantCondition.cpp" />
     <ClCompile Include="Plant.cpp" />
     <ClCompile Include="PlantAction.cpp" />
+    <ClCompile Include="PlayerAction.cpp" />
+    <ClCompile Include="PlayerCondition.cpp" />
     <ClCompile Include="Projectile.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="RugbyScene.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="StateMachine.cpp" />
     <ClCompile Include="Transition.cpp" />
@@ -38,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Action.h" />
+    <ClInclude Include="Ball.h" />
     <ClInclude Include="Behaviour.h" />
     <ClInclude Include="Condition.h" />
     <ClInclude Include="Debug.h" />
@@ -46,7 +52,11 @@
     <ClInclude Include="PlantCondition.h" />
     <ClInclude Include="Plant.h" />
     <ClInclude Include="PlantAction.h" />
+    <ClInclude Include="PlayerAction.h" />
+    <ClInclude Include="PlayerCondition.h" />
     <ClInclude Include="Projectile.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="RugbyScene.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="StateMachine.h" />
     <ClInclude Include="Transition.h" />
